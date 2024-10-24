@@ -6,13 +6,15 @@ See my current load order and mod list [on Load Order Library here](https://load
 ## Setup
 
 1. Download [latest MO2](#mod-organizer-2) and configure a portable instance
-1. Copy the entire Starfield directory from Steam into the MO2 directory and rename to `Stock Game Folder`
+1. Copy the entire Starfield directory from Steam into the MO2 directory and rename to `Stock Game Folder`[^1]
 1. In the settings, change Paths to point to `Stock Game Folder`
 1. In the MO2 directory, create a folder called `tools` and download [all tools](#tools) into here then add each one as an executable in MO2
-1. Install the latest Starfield Script Extender (SKSE) directly into `Stock Game Folder`
+1. Install the latest [Starfield Script Extender (SFSE)](https://www.nexusmods.com/starfield/mods/106) directly into `Stock Game Folder`
 1. Download `StarfieldPrefs.ini` and `StarfieldCustom.ini` and put in `My Games/Starfield` (and in `mo2/profiles/<profile>` for good measure)
 1. Download the four "better" default presets, and put in `Stock Game Folder`
 1. Replace the Nvidia DLSS plugin inside `Stock Game Folder` with the latest from [TechPowerup](https://www.techpowerup.com/download/nvidia-dlss-dll/)
+
+[^1]: Rationale for using Stock Game Folder rather than Root Builder is that while it uses more storage space, it will maintain the existing version of the game even if an update is released making it much safer
 
 ## Tools
 
