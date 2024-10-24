@@ -62,6 +62,7 @@ Make sure you check footnotes for additional info, and I welcome any suggestions
 
 ### Packing/Unpacking Files
 
+- There are many tools that can pack/unpack, but the two I found most useful in terms of Starfield support, speed, and function are [BSArchPro64](#bsarchpro64) and [BA2Upgrader](#ba2upgrader); alternatives include `Archive2` (included with the Creation Kit) and [Cathedral Asset Optimizer](https://www.nexusmods.com/skyrimspecialedition/mods/23316)
 - The max size of a BA2 should be `4095MB`
 - Before packing loose files, ensure that your load order is configured such that all conflicts are resolved how you would like
 - Pack loose textures using `Starfield - DDS` format, then use `BA2Upgrader` and upgrade to BA2 v3 using LZ4 compression for best performance
