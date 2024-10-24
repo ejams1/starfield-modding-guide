@@ -1,7 +1,10 @@
 # starfield-modding-guide
-Tips/guidance for modding Starfield; mostly a reference for myself. See my current load order and mod list [on Load Order Library here](https://loadorderlibrary.com/lists/a-better-starfield#modlist.txt).
+Tips/guidance for modding Starfield; mostly a reference for myself. Make sure you check footnotes for additional info, and I welcome any suggestions or corrections as issues or PRs!
 
-Make sure you check footnotes for additional info, and I welcome any suggestions or corrections as issues or PRs!
+See my current load order and mod list [on Load Order Library here](https://loadorderlibrary.com/lists/a-better-starfield#modlist.txt).
+
+> [!IMPORTANT]
+> I have not heavily tested this mod list or load order and it likely needs to be tweaked so please only use it as a reference.
 
 ## Setup
 
@@ -14,7 +17,7 @@ Make sure you check footnotes for additional info, and I welcome any suggestions
 1. Download the four "better" default presets, and put in `Stock Game Folder`
 1. Replace the Nvidia DLSS plugin inside `Stock Game Folder` with the latest from [TechPowerup](https://www.techpowerup.com/download/nvidia-dlss-dll/)
 
-[^1]: Rationale for using Stock Game Folder rather than Root Builder is that while it uses more storage space, it will maintain the existing version of the game even if an update is released making it much safer
+[^1]: Rationale for using Stock Game Folder rather than Root Builder is that while it uses more storage space, it will maintain the existing version of the game even if an update is released making it much safer; hi Fallout 4 Next-Gen patch!
 
 ## Tools
 
