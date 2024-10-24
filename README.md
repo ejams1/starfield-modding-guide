@@ -54,7 +54,7 @@ See my current load order and mod list [on Load Order Library here](https://load
 - Ensure that `.asi` mods like `Disk Cache Enabler` sit at the root of their mod folder as they are expected to be at the root of `Data/`; example: `Disk Cache Enabler/diskCacheEnabler.asi`
 - The armors `Banshee`, `Exile`, `HyperGuardian`, `Mark M` and `Pathfinder` all contain outdated meshes, and require updating (or [see Luxor's patches](https://www.nexusmods.com/starfield/mods/9468))
 - [Luma](https://www.nexusmods.com/starfield/mods/4821) seems to cause black crushing on my OLED displays but likely needs further tweaking; [NaturalLUTs](https://www.nexusmods.com/starfield/mods/1119) plus the default HDR (or Nvidia RTX HDR) seem to be good enough
-- [Console Command Runner (CCR)](https://www.nexusmods.com/starfield/mods/7318) mods are no longer relevant as they can be easily recreated natively in the Creation Kit as an `.esm`; for example, I recreated [Instant Scan](https://www.nexusmods.com/starfield/mods/759) this way
+- [Console Command Runner (CCR)](https://www.nexusmods.com/starfield/mods/7318) mods are no longer relevant as they can be easily recreated natively in the Creation Kit as an `.esm`; for example, I recreated [Instant Scan](https://www.nexusmods.com/starfield/mods/759) this way in about 5 minutes
 - [The Dualsense icons mod](https://www.nexusmods.com/starfield/mods/215) apparently needs an update as there are some missing icons in the Creations menu
 - Speaking of which, files from the `interface/` folder such as `.swf` files can be edited with [this tool](#jpexs-decompiler)
 
