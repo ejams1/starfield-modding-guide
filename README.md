@@ -48,7 +48,7 @@ Make sure you check footnotes for additional info, and I welcome any suggestions
 - For editing `.swf` files usually found in `interface/` files such as icons and fonts
 - Download from [Github](https://github.com/jindrapetrik/jpexs-decompiler)
 
-## Tips
+## Notes/Tips
 
 ### Miscellaneous
 
