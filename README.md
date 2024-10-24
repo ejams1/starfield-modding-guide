@@ -55,7 +55,7 @@ See my current load order and mod list [on Load Order Library here](https://load
 
 ### Miscellaneous
 
-- Using [SKK Fast Start](https://www.nexusmods.com/starfield/mods/5971) can cause issues with [audio not playing](https://www.nexusmods.com/starfield/mods/10776?tab=posts); supposedly it goes away after awhile or possible reload but starting vanilla is safest
+- Using [SKK Fast Start](https://www.nexusmods.com/starfield/mods/5971) can cause issues with [weapon sound fixes](https://www.nexusmods.com/starfield/mods/10776?tab=posts) resulting in weapons not having sound; supposedly it goes away after awhile or possible reload but starting vanilla is safest if using both of these
 - Ensure that `.asi` mods like [Disk Cache Enabler](https://www.nexusmods.com/starfield/mods/2245) sit at the root of their mod folder as the [updated ASI loader](https://www.nexusmods.com/starfield/mods/8055) expect them to be at the root of `Data/`; example: `Disk Cache Enabler/diskCacheEnabler.asi`
   - You will know it is in the right spot and loading correctly if you start the game, exit, and see a line in `Documents\My Games\Starfield\SFSE\Logs\SFSEAsiLoader.log` that says something like `[10/23/24 19:59:10][info](main.cpp:114) Loading C:...\Stock Game Folder\Data\diskCacheEnabler.asi` followed by `Loaded plugin successfully`
 - The armors `Banshee`, `Exile`, `HyperGuardian`, `Mark M` and `Pathfinder` all contain outdated meshes, and require updating (or [see Luxor's patches](https://www.nexusmods.com/starfield/mods/9468))
