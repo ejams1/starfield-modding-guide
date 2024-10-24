@@ -1,0 +1,143 @@
+# This file is used by Starfield to keep track of your downloaded content.
+# Please do not modify this file.
+*StarfieldCommunityPatch.esm
+*45KO_CharGen.esm
+*ShipBuilderCategories.esm
+*TNClassM.esm
+*TNShipModsAllInOne.esm
+*poi_variations_shuffle.esm
+*ShopkeeperSchedules.esm
+*MB_Scrappy.esm
+*ClothingAndSpacesuitFixes.esm
+*GravityIsReal.esm
+*MoreEnemies.esm
+*SpacesuitPack_All_Z.esm
+*ClothingPack_Standalone_Z.esm
+*VaruunX_Z.esm
+*CrimsonX_Z.esm
+*Mark M.esm
+*Banshee.esm
+*rbt_BalancedBallistics.esm
+*AccurateADS.esm
+*RRLN - Rabbit's Real Lights Neon.esm
+*DangerousEbbside.esm
+*RRLAC - Rabbit's Real Lights Akila City.esm
+*ProjectWarfare.esm
+*RRLHT - Rabbit's Real Lights HopeTown.esm
+*RRLNA - Rabbit's Real Lights New Atlantis.esm
+*RRLP - Rabbit's Real Lights Paradiso.esm
+*VeersShips.esm
+*ConstellationPremiumEditionIntegrated.esm
+*Eli_SurveySlates.esm
+*RRLC - Rabbit's Real Lights Cydonia.esm
+*RRLNH - Rabbit's Real Lights New Homestead.esm
+*AntiMaterielRifle.esm
+*Aurie_BuildOuptostsWithCredits.esm
+*ImmersiveShellCasings.esm
+*GB_ShipBuilderConfigurator.esm
+*ArmaLite - AR-121.esm
+*BattensWrecks.esm
+*RRLD - Rabbit's Real Lights Dazra.esm
+*Better_Living_II.esm
+*Leveled Mission Rewards.esm
+*Better_Outpost_Radius.esm
+*BetterDeathPhysicsNoCollision.esm
+*CraftableWeaponSkins.esm
+*BSDM14.esm
+*CraftableWeaponSkins-TrackersAlliance.esm
+*CraftableWeaponSkins-ConstellationSkinPack.esm
+*FamilyReunionFix.esm
+*CraftableWeaponSkins-OldMarsSkinPack.esm
+*disablemagicboost.esm
+*GoloSentinelSkill.esm
+*du_takeover.esm
+*DWN_DecorativePack.esm
+*RoyalAliens.esm
+*RoyalWeathers.esm
+*Earth POIs.esm
+*Eli_RenamedEvidence.esm
+*Eli_RenamedSnowglobes.esm
+*Exile.esm
+*GoloAerobicsSkill.esm
+*Experimental Ship Weapons.esm
+*KZ_AIO.esm
+*GoloBeginnersLuckSkill.esm
+*GoloBloodrushSkill.esm
+*GoloCoffeeFiendSkill.esm
+*GoloKenjutsuSkill.esm
+*GoloMomentumSkillCombat.esm
+*rbt_WeaponPerks.esm
+*HyperGuardian.esm
+*Samantha Says - Dynamic Repair Bill.esm
+*ImprovedFollowerBehavior.esm
+*Shades_Vehicle_Tuner.esm
+*InstantScan-3scans.esm
+*RoyalStarbornNPCs.esm
+*LevelScaling.esm
+*MoreSurveyMissions.esm
+*OddZealot_ConstellationTankTops.esm
+*OldMarsDistributed.esm
+*OutpostMissionBoards.esm
+*Pathfinder.esm
+*Pistol_Laredo_M2.esm
+*PlanetDB.esm
+*RoyalSpaceMagic.esm
+*ProjectWarfareAddonPack1.esm
+*SubtleFlashlight - Less Wide - BlueNoSpec.esm
+*PXC_AmmoHud.esm
+*PXC_AmmoHud_Patch_PWHE-AP1.esm
+*PXC_AmmoHud_Patch_PWHE.esm
+*BetterShipPartFlips.esm
+*BSPF-TNShipModsAllInOne-Patch.esm
+*rbt_CaptainsChoice.esm
+*rbt_SpacefaringEconomy.esm
+*rbt_SuitUp.esm
+*RD_ArmaLite_AR-121_Fix.esm
+*ReworkedspacebountiesV2.esm
+*RRLG - Rabbit's Real Lights Gagarin.esm
+*RoyalTerror.esm
+*RRL OBJECTS - Rabbit's Real Lights Landing Pads.esm
+*RSB_NerfedRewardPatch.esm
+*Samantha Says - Dynamic Medical Bill.esm
+*SarahMorgan.esm
+*SETI_ShipLights_by_BosDragon.esm
+*Shades_Glowy_Stuff.esm
+*Shades_Tattoo_MegaPack.esm
+*ShipVendorFramework.esm
+*Bosco's Galactic Customs.esm
+*SOL - Sensible Outpost Lighting.esm
+*SP2_LandingBayCargoAccess.esm
+*SP2_VascoRecognizesMorePlayerNames.esm
+*Dank_LEO.esm
+*SSMod_MoreLegendaryEffects.esm
+*Starfield_Hair+Beards_Z.esm
+*ClothingAndSpacesuitFixes-ConstellationSkinPack.esm
+*ClothingAndSpacesuitFixes-TrackersAlliance.esm
+*StarfieldsAnon.esm
+*Starvegas - CinematicKillcam.esm
+*SYNTH_Ambient.esm
+*SYNTH_Combat_Wicked_Metal.esm
+*SYNTH_UI.esm
+*TNMeleeWeaponModifications.esm
+*Varuun DLC items in base game.esm
+*VisibleCompanionAffinity.esm
+*weap_HVAP.esm
+*weap_starlight.esm
+*WeaponSoundFixes.esm
+*ZW_AIO_CombaTech_Dark.esm
+*GB_SBCX_ShatteredSpace.esm
+*ZW_AIO_Laredo_Carbon.esm
+*Ship Power Fix.esm
+*SeizureOfShips.esm
+*Sit To Add Ship.esm
+*Variable Contraband Prices.esm
+*costofspacing.esm
+*LeaveNoWitnesses.esm
+*Red_Mile_Terror.esm
+*DRH LEO-MLE Patch.esm
+*PlayerSpeedRevised.esm
+*rbt_CostOfLiving.esm
+*PXC_AmmoHud_Patch_BSD-M14.esm
+*Lodecs_WEAP_CustomArmory.esm
+*PXC_AmmoHud_Patch_LCA.esm
+*OVERRIDE_Starfield.esm
