@@ -1,6 +1,8 @@
 # starfield-modding-guide
 Tips/guidance for modding Starfield; mostly a reference for myself.
 
+See my current load order and mod list [on Load Order Library here](https://loadorderlibrary.com/lists/a-better-starfield).
+
 ## Setup
 
 1. Download [latest MO2](#mod-organizer-2) and configure a portable instance
