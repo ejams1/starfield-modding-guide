@@ -1,6 +1,12 @@
 # starfield-modding-guide
 Tips/guidance for modding Starfield; mostly a reference for myself.
 
+## Setup
+
+1. Download `StarfieldPrefs.ini` and `StarfieldCustom.ini` and put in `My Games/Starfield`
+2. Download the four "better" default presets, and put in your Starfield root directory
+3. Replace the Nvidia DLSS plugin with the latest from [TechPowerup](https://www.techpowerup.com/download/nvidia-dlss-dll/)
+
 ## Tools
 
 - **xEdit**
