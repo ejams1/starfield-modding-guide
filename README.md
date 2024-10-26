@@ -54,15 +54,25 @@ See my current load order and mod list [on Load Order Library here](https://load
 - For editing `.swf` files usually found in `interface/` files such as icons and fonts
 - Download from [Github](https://github.com/jindrapetrik/jpexs-decompiler)
 
-## Notes/Tips
+## Tips
 
-### Unofficial Patch vs. Community Patch
+- Using [SKK Fast Start](https://www.nexusmods.com/starfield/mods/5971) can cause issues with [weapon sound fixes](https://www.nexusmods.com/starfield/mods/10776?tab=posts) resulting in weapons not having sound; supposedly it goes away after awhile or possible reload but starting vanilla is safest if using both of these
+  - EDIT: I have also noticed textures not loading in when using quick start and starting in the Lodge - they returned on a subsequent reload similar to the audio issues
+- Ensure that `.asi` mods like [Disk Cache Enabler](https://www.nexusmods.com/starfield/mods/2245) sit at the root of their mod folder as the [updated ASI loader](https://www.nexusmods.com/starfield/mods/8055) expect them to be at the root of `Data/`; example: `Disk Cache Enabler/diskCacheEnabler.asi`
+  - You will know it is in the right spot and loading correctly if you start the game, exit, and see a line in `Documents\My Games\Starfield\SFSE\Logs\SFSEAsiLoader.log` that says something like `[10/23/24 19:59:10][info](main.cpp:114) Loading C:...\Stock Game Folder\Data\diskCacheEnabler.asi` followed by `Loaded plugin successfully`
+- The armors `Banshee`, `Exile`, `HyperGuardian`, `Mark M` and `Pathfinder` all contain outdated meshes, and require updating (or [see Luxor's patches](https://www.nexusmods.com/starfield/mods/9468))
+- [Luma](https://www.nexusmods.com/starfield/mods/4821) seems to cause black crushing on my OLED displays but likely needs further tweaking; [NaturalLUTs](https://www.nexusmods.com/starfield/mods/1119) plus the default HDR (or Nvidia RTX HDR) seem to be good enough
+- [Console Command Runner (CCR)](https://www.nexusmods.com/starfield/mods/7318) mods are no longer relevant as they can be easily recreated natively in the Creation Kit as an `.esm`; for example, I recreated [Instant Scan](https://www.nexusmods.com/starfield/mods/759) this way in about 5 minutes
+- [The Dualsense icons mod](https://www.nexusmods.com/starfield/mods/215) apparently needs an update as there are some missing icons in the Creations menu
+- Speaking of which, files from the `interface/` folder such as `.swf` files can be edited with [this tool](#jpexs-decompiler)
 
-#### Context
+## Unofficial Patch vs. Community Patch
+
+### Context
 
 In previous Bethesda games, there always seemed to be a unified unofficial patch mod that many would contribute to resulting in a simple end user experience - install one patch, fix all community-known issues. However, there was drama involving a developer of those patches and so to avoid that further, a community effort was formed resulting in the [Starfield Community Patch (SFCP)](https://www.nexusmods.com/starfield/mods/1). This didn't stop the developer from continuing to create their own patch though, the [Unofficial Starfield Patch (USFP)](https://www.nexusmods.com/starfield/mods/143).
 
-#### Which Should I Use?
+### Which Should I Use?
 
 I liked [this answer from Deebz_](https://www.reddit.com/r/starfieldmods/comments/1fvqnwb/comment/lqa6vnx/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button):
 
@@ -76,18 +86,7 @@ I liked [this answer from Deebz_](https://www.reddit.com/r/starfieldmods/comment
 
 That being said, I also appreciate the collaborative effort to build the community patch, so my personal preference is that one.
 
-### Miscellaneous
-
-- Using [SKK Fast Start](https://www.nexusmods.com/starfield/mods/5971) can cause issues with [weapon sound fixes](https://www.nexusmods.com/starfield/mods/10776?tab=posts) resulting in weapons not having sound; supposedly it goes away after awhile or possible reload but starting vanilla is safest if using both of these
-- Ensure that `.asi` mods like [Disk Cache Enabler](https://www.nexusmods.com/starfield/mods/2245) sit at the root of their mod folder as the [updated ASI loader](https://www.nexusmods.com/starfield/mods/8055) expect them to be at the root of `Data/`; example: `Disk Cache Enabler/diskCacheEnabler.asi`
-  - You will know it is in the right spot and loading correctly if you start the game, exit, and see a line in `Documents\My Games\Starfield\SFSE\Logs\SFSEAsiLoader.log` that says something like `[10/23/24 19:59:10][info](main.cpp:114) Loading C:...\Stock Game Folder\Data\diskCacheEnabler.asi` followed by `Loaded plugin successfully`
-- The armors `Banshee`, `Exile`, `HyperGuardian`, `Mark M` and `Pathfinder` all contain outdated meshes, and require updating (or [see Luxor's patches](https://www.nexusmods.com/starfield/mods/9468))
-- [Luma](https://www.nexusmods.com/starfield/mods/4821) seems to cause black crushing on my OLED displays but likely needs further tweaking; [NaturalLUTs](https://www.nexusmods.com/starfield/mods/1119) plus the default HDR (or Nvidia RTX HDR) seem to be good enough
-- [Console Command Runner (CCR)](https://www.nexusmods.com/starfield/mods/7318) mods are no longer relevant as they can be easily recreated natively in the Creation Kit as an `.esm`; for example, I recreated [Instant Scan](https://www.nexusmods.com/starfield/mods/759) this way in about 5 minutes
-- [The Dualsense icons mod](https://www.nexusmods.com/starfield/mods/215) apparently needs an update as there are some missing icons in the Creations menu
-- Speaking of which, files from the `interface/` folder such as `.swf` files can be edited with [this tool](#jpexs-decompiler)
-
-### Packing/Unpacking Files
+## Packing/Unpacking Files
 
 - There are many tools that can pack/unpack, but the two I found most useful in terms of Starfield support, speed, and function are [BSArchPro64](#bsarchpro64) and [BA2Upgrader](#ba2upgrader); alternatives include `Archive2` (included with the Creation Kit) and [Cathedral Asset Optimizer](https://www.nexusmods.com/skyrimspecialedition/mods/23316)
 - The max size of a BA2 should be `4095MB`
@@ -111,7 +110,7 @@ That being said, I also appreciate the collaborative effort to build the communi
 [^2]: There are other resource file lists in the `[Archive]` section in the ini, and depending on the overrides, you may need to add your packed BA2 to other sections. Needs further investigation.
 [^3]: I don't know why, but the Starfield ini files in my MO2 directory were not being loaded, and it was instead loading from my Documents folder still. This may be a config error so needs double-checking. If in doubt, place your ini's in both.
 
-### Repacking Vanilla Archives
+## Repacking Vanilla Archives
 
 - Only helpful for very large texture overhauls such as [Starfield HD Overhaul](https://www.nexusmods.com/starfield/mods/5124) to save space and possibly load faster due to fewer (large) BA2's
 - Loose files shouldn't be repacked into vanilla archives as more custom files in the base archives will create complexity especially if you want to remove a mod
