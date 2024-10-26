@@ -152,6 +152,34 @@ where `path\to\ModOrganizer.exe` is the full path to the MO2 executable. For exa
 "G:\Mods\dev-modlists\a-better-starfield\ModOrganizer.exe" "moshortcut://:SFSE" %command%
 ```
 
+## Performance Benchmarking
+
+I needed a way to quickly identify possible problematic mods in my load order, so I came up with the following.
+
+### Pre-requisites
+
+- [SKK Fast Start](https://www.nexusmods.com/starfield/mods/5971) - to quickly get in-game
+- [CapFrameX](https://www.capframex.com/) - to track performance
+
+### Methodology
+
+1. Download and start up CapFrameX
+1. Sort load order to test and start game
+1. Start a new game
+1. You will load in New Atlantis - leave all options as they are
+1. Quickly choose a background and name, and finish character creator
+1. Wait a few seconds for everything to load, then go in inventory and back out - SKK should say that it has initialized
+1. Once all notifications stop, hit `F11` which begins the recording
+1. Run straight through, past the crowds, up the ramp; at the top, turn around then back again, and finish by walking to the closest sign
+1. Hit `F11` again to stop recording, and exit the game
+
+This is _very_ rough and not ideal, but it has the following benefits:
+
+- Quick to perform
+- Dense area that will test performance
+- Crowds of people
+- And more
+
 ## Packing/Unpacking Files
 
 - There are many tools that can pack/unpack, but the two I found most useful in terms of Starfield support, speed, and function are [BSArchPro64](#bsarchpro64) and [BA2Upgrader](#ba2upgrader); alternatives include `Archive2` (included with the Creation Kit) and [Cathedral Asset Optimizer](https://www.nexusmods.com/skyrimspecialedition/mods/23316)
