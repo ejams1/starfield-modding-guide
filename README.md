@@ -102,6 +102,28 @@ Here is how to remove it:
 1. Repeat for other affected mods
 1. Confirm all is good by sorting with LOOT again which should now report no `BlueprintShips-Starfield.esm`
 
+## Launch a Mod Organizer 2 Profile Through Steam
+
+> [!NOTE]
+> This applies to _all_ Mod Organizer 2 mod lists, not just Starfield.
+
+If you would like Steam functionality to while using mods, you can configure Steam to point to your modded directory. This does not inherently disable achievements unless you have mods that do so, and allows opening the Steam in-game interface, use of Steam input, and easily launching your modded list through Steam Remote Play.
+
+1. Ensure you have the script extender installed in `Stock Game Folder`
+1. In MO2, edit the executables and click the `+` to add one
+1. Name it `SFSE`, and for the binary, locate the `sfse_loader.exe` and select it
+1. Now in Steam, right-click on Starfield, click `Properties`
+1. In the `General` tab under `Launch Options`, enter the following:
+
+```
+"path\to\ModOrganizer.exe" "moshortcut://:SFSE" %command%
+```
+where `path\to\ModOrganizer.exe` is the full path to the MO2 executable. For example, here is mine:
+
+```
+"G:\Mods\dev-modlists\a-better-starfield\ModOrganizer.exe" "moshortcut://:SFSE" %command%
+```
+
 ## Packing/Unpacking Files
 
 - There are many tools that can pack/unpack, but the two I found most useful in terms of Starfield support, speed, and function are [BSArchPro64](#bsarchpro64) and [BA2Upgrader](#ba2upgrader); alternatives include `Archive2` (included with the Creation Kit) and [Cathedral Asset Optimizer](https://www.nexusmods.com/skyrimspecialedition/mods/23316)
