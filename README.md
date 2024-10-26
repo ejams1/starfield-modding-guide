@@ -12,15 +12,13 @@ See my current load order and mod list [on Load Order Library here](https://load
 ## Setup
 
 1. Download [latest MO2](#mod-organizer-2) and configure a portable instance
-1. Copy the entire Starfield directory from Steam into the MO2 directory and rename to `Stock Game Folder`[^1]
+1. Copy the entire Starfield directory from Steam into the MO2 directory and rename to `Stock Game Folder`; rationale for using Stock Game Folder over Root Builder is that while it uses more storage, it will maintain the existing version of the game even if an update is released so it won't break
 1. In the settings, change Paths to point to `Stock Game Folder`
 1. In the MO2 directory, create a folder called `tools` and download [all tools](#tools) into here then add each one as an executable in MO2
 1. Install the latest [Starfield Script Extender (SFSE)](https://www.nexusmods.com/starfield/mods/106) directly into `Stock Game Folder`
 1. Download `StarfieldPrefs.ini` and `StarfieldCustom.ini` and put in `My Games/Starfield` (and in `mo2/profiles/<profile>` for good measure)
 1. Download the four "better" default presets, and put in `Stock Game Folder`
 1. Replace the Nvidia DLSS plugin inside `Stock Game Folder` with the latest from [TechPowerup](https://www.techpowerup.com/download/nvidia-dlss-dll/)
-
-[^1]: Rationale for using Stock Game Folder rather than Root Builder is that while it uses more storage space, it will maintain the existing version of the game even if an update is released making it much safer; hi Fallout 4 Next-Gen patch!
 
 ## Tools
 
@@ -122,11 +120,10 @@ Here is how to remove it:
   - If the mod ONLY contains loose files like `textures`, you can disable the mod in your load order
   - If the mod _also_ contains an `.esm`, then reinstall the mod and add `- Packed` to it which will create a copy of the mod; in this copy, delete the loose files so that only the `.esm` remains, and enable this mod and disable the original. This ensures the `.esm` still loads but prevents the loose files from loading even after we have already packed them
   - The second strategy can be used if the mod contains loose files too as it makes it easier to update the mods
-- To ensure a packed BA2 is loaded, add it to the `sResourceIndexFileList` in `Documents/My Games/Starfield/StarfieldCustom.ini`[^2][^3]
+- To ensure a packed BA2 is loaded, add it to the `sResourceIndexFileList` in `Documents/My Games/Starfield/StarfieldCustom.ini`
+  - There are other resource file lists in the `[Archive]` section in the ini, and depending on the overrides, you may need to add your packed BA2 to other sections - needs further investigation
+  - I don't know why, but the Starfield ini files in my MO2 directory were not being loaded, and it was instead loading from my Documents folder still; his may be a config error so needs double-checking. If in doubt, place your ini's in both
 - To find _all_ loose files, run `Explorer++` and look at the virtual game directory, then in the `Data` folder - all loose asset folders should be visible here
-
-[^2]: There are other resource file lists in the `[Archive]` section in the ini, and depending on the overrides, you may need to add your packed BA2 to other sections. Needs further investigation.
-[^3]: I don't know why, but the Starfield ini files in my MO2 directory were not being loaded, and it was instead loading from my Documents folder still. This may be a config error so needs double-checking. If in doubt, place your ini's in both.
 
 ## Repacking Vanilla Archives
 
