@@ -16,8 +16,8 @@ See my current load order and mod list [on Load Order Library here](https://load
 1. In the settings, change Paths to point to `Stock Game Folder`
 1. In the MO2 directory, create a folder called `tools` and download [all tools](#tools) into here then add each one as an executable in MO2
 1. Install the latest [Starfield Script Extender (SFSE)](https://www.nexusmods.com/starfield/mods/106) directly into `Stock Game Folder`
-1. Download `StarfieldPrefs.ini` and `StarfieldCustom.ini` and put in `My Games/Starfield` (and in `mo2/profiles/<profile>` for good measure)
-1. Download the four "better" default presets, and put in `Stock Game Folder`
+1. Download `StarfieldPrefs.ini` and `StarfieldCustom.ini` and put in `Documents/My Games/Starfield` (and in `mo2/profiles/<profile>` for good measure)
+1. Download the `Ultra.ini` preset, and put in `Stock Game Folder` (this is tweaked to have settings more like Medium, but better meshes from Ultra)
 1. Replace the Nvidia DLSS plugin inside `Stock Game Folder` with the latest from [TechPowerup](https://www.techpowerup.com/download/nvidia-dlss-dll/)
 
 ## Tools
@@ -101,6 +101,34 @@ Here is how to remove it:
 1. Press `Ctrl + Del` which will remove it
 1. Repeat for other affected mods
 1. Confirm all is good by sorting with LOOT again which should now report no `BlueprintShips-Starfield.esm`
+
+## ini Files Explained
+
+`ini` files are the configuration files that host the in-game settings you choose in the options menu plus more granular settings that are not exposed in-game.
+
+To get the best performance and ensure your settings are loading properly, let's examine what each file is and how it works. This section is [adapted from the fantastic STEP guide here](https://stepmodifications.org/forum/topic/19019-starfield-default-values-for-all-known-valid-ini-settings/).
+
+### StarfieldPrefs.ini
+
+Located in `Documents/My Games/Starfield/`.
+
+Holds options like resolution, camera, controls, difficulty and more; most of what you see in the options menu.
+
+However, the most important section is `[Quality]` - this outlines the render settings for each customizable quality setting. The values map to one of the Low/Medium/High/Ultra files found in `Stock Game Folder` - for example, if you choose `uContactShadows=1`, it will use the value configured in `Low.ini`; likewise, `uContactShadows=3` will load the value from `Ultra.ini`.
+
+This gets confusing fast since this file is really just pointing to each of the other files for different values, so to make this easier, it is suggested to modify one of the base profiles (usually `Ultra.ini`) to exactly what you want, and then in `StarfieldPrefs.ini` you can set each quality setting to `3` so that they all point to just that file. This is how my sample ini's are configured in this repo.
+
+### StarfieldCustom.ini
+
+Located in `Documents/My Games/Starfield/`.
+
+This file holds other configurations such as `[Archive]` which holds the list of all BA2 files to load.
+
+### Low/Medium/High/Ultra.ini
+
+Located in `Stock Game Folder`.
+
+These hold the granular quality settings for each type of rendering option you can set in-game. The `Low.ini` holds the values for everything that would be set in the `Low` profile etc.
 
 ## Launch a Mod Organizer 2 Profile Through Steam
 
