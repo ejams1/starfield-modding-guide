@@ -56,6 +56,26 @@ See my current load order and mod list [on Load Order Library here](https://load
 
 ## Notes/Tips
 
+### Unofficial Patch vs. Community Patch
+
+#### Context
+
+In previous Bethesda games, there always seemed to be a unified unofficial patch mod that many would contribute to resulting in a simple end user experience - install one patch, fix all community-known issues. However, there was drama involving a developer of those patches and so to avoid that further, a community effort was formed resulting in the [Starfield Community Patch (SFCP)](https://www.nexusmods.com/starfield/mods/1). This didn't stop the developer from continuing to create their own patch though, the [Unofficial Starfield Patch (USFP)](https://www.nexusmods.com/starfield/mods/143).
+
+#### Which Should I Use?
+
+I liked [this answer from Deebz_](https://www.reddit.com/r/starfieldmods/comments/1fvqnwb/comment/lqa6vnx/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button):
+
+> [Community Patch changelog](https://www.starfieldpatch.dev/changelog)
+> 
+> [Unofficial Patch changelog](https://www.afkmods.com/Unofficial%20Starfield%20Patch%20Version%20History.html)
+>
+> I’m on the SFCP team, but I would personally advise looking at both changelogs and coming to your own conclusion about which to use.
+>
+> Objectively, the Community Patch fixes a lot more right now, but both changelogs have some differences from one another. Up to you to decide which set of fixes you want, or if they are even necessary to you in the first place. Both mods are stable and safe to use, so it really just comes down to that.
+
+That being said, I also appreciate the collaborative effort to build the community patch, so my personal preference is that one.
+
 ### Miscellaneous
 
 - Using [SKK Fast Start](https://www.nexusmods.com/starfield/mods/5971) can cause issues with [weapon sound fixes](https://www.nexusmods.com/starfield/mods/10776?tab=posts) resulting in weapons not having sound; supposedly it goes away after awhile or possible reload but starting vanilla is safest if using both of these
