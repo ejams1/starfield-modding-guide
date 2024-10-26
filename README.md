@@ -118,8 +118,7 @@ Here is how to remove it:
   ```
 - After files are packed into archives, the mods they come from should be disabled to prevent still loading the loose files
   - If the mod ONLY contains loose files like `textures`, you can disable the mod in your load order
-  - If the mod _also_ contains an `.esm`, then reinstall the mod and add `- Packed` to it which will create a copy of the mod; in this copy, delete the loose files so that only the `.esm` remains, and enable this mod and disable the original. This ensures the `.esm` still loads but prevents the loose files from loading even after we have already packed them
-  - The second strategy can be used if the mod contains loose files too as it makes it easier to update the mods
+  - If the mod _also_ contains an `.esm`, delete the loose files so that only the `.esm` remains; this ensures the `.esm` still loads but prevents the redundant loose files from loading
 - To ensure a packed BA2 is loaded, add it to the `sResourceIndexFileList` in `Documents/My Games/Starfield/StarfieldCustom.ini`
   - There are other resource file lists in the `[Archive]` section in the ini, and depending on the overrides, you may need to add your packed BA2 to other sections - needs further investigation
   - I don't know why, but the Starfield ini files in my MO2 directory were not being loaded, and it was instead loading from my Documents folder still; his may be a config error so needs double-checking. If in doubt, place your ini's in both
