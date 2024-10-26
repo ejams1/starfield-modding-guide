@@ -86,6 +86,24 @@ I liked [this answer from Deebz_](https://www.reddit.com/r/starfieldmods/comment
 
 That being said, I also appreciate the collaborative effort to build the community patch, so my personal preference is that one.
 
+## Removing BlueprintShips-Starfield.esm As Master
+
+Many mods have `BlueprintShips-Starfield.esm` listed as a master which LOOT will report as an issue. So many mods have this as early versions of xEdit set it as master as it was thought to be necessary at the time - this has since been proven unnecessary. The downside to this is that `BlueprintShips-Starfield.esm` always loads last, so any mods with it listed as master will load after it _even if_ you sort your load order otherwise.
+
+Here is how to remove it:
+
+> [!NOTE]
+> Future builds of xEdit will include the ability to remove it as well, but for now we will use the Creation Kit
+
+1. Put the affected `.esm` file in `base game/Data`, where `base game/` is the primary Starfield installation where the Creation Kit is also installed
+1. Load the Creation Kit
+1. Click `File` -> `Data`
+1. Find your mod and select it
+1. In the right column, a list of masters will be shown including - select `BlueprintShips-Starfield.esm`
+1. Press `Ctrl + Del` which will remove it
+1. Repeat for other affected mods
+1. Confirm all is good by sorting with LOOT again which should now report no `BlueprintShips-Starfield.esm`
+
 ## Packing/Unpacking Files
 
 - There are many tools that can pack/unpack, but the two I found most useful in terms of Starfield support, speed, and function are [BSArchPro64](#bsarchpro64) and [BA2Upgrader](#ba2upgrader); alternatives include `Archive2` (included with the Creation Kit) and [Cathedral Asset Optimizer](https://www.nexusmods.com/skyrimspecialedition/mods/23316)
