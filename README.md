@@ -170,15 +170,10 @@ I needed a way to quickly identify possible problematic mods in my load order, s
 1. Quickly choose a background and name, and finish character creator
 1. Wait a few seconds for everything to load, then go in inventory and back out - SKK should say that it has initialized
 1. Once all notifications stop, hit `F11` which begins the recording
-1. Run straight through, past the crowds, up the ramp; at the top, turn around then back again, and finish by walking to the closest sign
+1. Run straight through, past the crowds, up the ramp; at the top, turn around to look back down the ramp at the crowd, then turn back and finish by walking to the closest sign
 1. Hit `F11` again to stop recording, and exit the game
 
-This is _very_ rough and not ideal, but it has the following benefits:
-
-- Quick to perform
-- Dense area that will test performance
-- Crowds of people
-- And more
+This is _very_ rough and not ideal, but it provides a reasonable way to get an idea of how your load order performs in a demanding area of the game quickly.
 
 ## Packing/Unpacking Files
 
