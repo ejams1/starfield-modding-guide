@@ -175,27 +175,50 @@ I needed a way to quickly identify possible problematic mods in my load order, s
 
 This is _very_ rough and not ideal, but it provides a reasonable way to get an idea of how your load order performs in a demanding area of the game quickly.
 
-## Packing/Unpacking Files
+## Packing Loose Files
+
+Steps have been adapted from [this wonderful guide on Nexus](https://www.nexusmods.com/starfield/articles/578), please go endorse!
+
+### Pre-requisites
 
 - There are many tools that can pack/unpack, but the two I found most useful in terms of Starfield support, speed, and function are [BSArchPro64](#bsarchpro64) and [BA2Upgrader](#ba2upgrader); alternatives include `Archive2` (included with the Creation Kit) and [Cathedral Asset Optimizer](https://www.nexusmods.com/skyrimspecialedition/mods/23316)
-- The max size of a BA2 should be `4095MB`
-- Before packing loose files, ensure that your load order is configured such that all conflicts are resolved how you would like
-- Pack loose textures using `Starfield - DDS` format, then use `BA2Upgrader` and upgrade to BA2 v3 using LZ4 compression for best performance
-- Pack any other loose assets (interface, meshes, sound, etc) using `Starfield - General` format; BA2 v3 is only for textures, so no further action needed
-- Texture archives should be named `<plugin> - Textures.ba2` and everything else should be in `<plugin> - Main.ba2`
-- After packing is complete, create a dummy light `.esm` with the same name as `<plugin` above; an example packed directory should look like:
-  ```
-  overrides - Main.ba2
-  overrides - Textures.ba2
-  overrides.esm
-  ```
-- After files are packed into archives, the mods they come from should be disabled to prevent still loading the loose files
-  - If the mod ONLY contains loose files like `textures`, you can disable the mod in your load order
-  - If the mod _also_ contains an `.esm`, delete the loose files so that only the `.esm` remains; this ensures the `.esm` still loads but prevents the redundant loose files from loading
-- To ensure a packed BA2 is loaded, add it to the `sResourceIndexFileList` in `Documents/My Games/Starfield/StarfieldCustom.ini`
-  - There are other resource file lists in the `[Archive]` section in the ini, and depending on the overrides, you may need to add your packed BA2 to other sections - needs further investigation
-  - I don't know why, but the Starfield ini files in my MO2 directory were not being loaded, and it was instead loading from my Documents folder still; his may be a config error so needs double-checking. If in doubt, place your ini's in both
+- Ensure that your load order is configured such that all conflicts are resolved how you would like
 - To find _all_ loose files, run `Explorer++` and look at the virtual game directory, then in the `Data` folder - all loose asset folders should be visible here
+- I don't know why, but the Starfield ini files in my MO2 directory were not being loaded, and it was instead loading from my Documents folder still
+- Pack loose textures using `Starfield - DDS` format, then use `BA2Upgrader` and upgrade to BA2 v3 using LZ4 compression for best performance
+
+### Packing
+
+This guide was adapated from a resource that used Archive2, so feel free to use that or if you are comfortable with it, use BSArchPro64.
+
+1. In Archive2, load all your UI files (i.e. flash files) in your Interface folder and then in Settings set the Type to General and the Compression to None and then save the archive to the game root Data folder as MyMods - Interface.ba2.
+1. Again in Archive2, load all your PEX scripts from your Scripts folder and then in Settings once again set the Type to General and the Compression to None and then save the archive to the game root Data folder as MyMods - Misc.ba2.
+1. Once again in Archive2, load all your WEM files from your Sound folder and then in Settings set the Type to General and the Compression to None and then save the archive to the game root Data folder as MyMods - WwiseSounds.ba2.
+1. Also in Archive2, load all your textures from your Textures folder and then in Settings set the Type to DDS and the Compression to LZ4 and then save the archive to the game root Data folder as MyMods - Textures.ba2.
+1. Finally in Archive2 again, load everything left (i.e. Geometries, Materials, Meshes, Strings, etc.) and in Settings set the Type to General and the Compression to Default and then save the archive to the game root Data folder as MyMods - Main.ba2.
+
+### Loading New Archives
+
+Once you have made all of those archives, you then just need a way to load the archives into the game. You can use StarfieldCustom.ini to do this:
+
+1. Place ", MyMods - Textures.ba2" at the end of the line beginning with "sResourceIndexFileList=" (ignore quotation marks).
+1. Place ", MyMods - Interface.ba2" at the end of the line beginning with "SResourceArchiveMemoryCacheList=" as well as at the end of the line beginning with "sResourceStartUpArchiveList=" (ignore quotation marks).
+1. Place ", MyMods - Misc.ba2" at the end of the line beginning with "SResourceArchiveList=" as well as at the end of the line beginning with "SResourceArchiveMemoryCacheList=" (ignore quotation marks).
+1. Place ", MyMods - WwiseSounds.ba2" at the end of the line beginning with "sResourceStartUpArchiveList=" (ignore quotation marks).
+1. Finally, place ", MyMods - Main.ba2" at the end of the line beginning with "SResourceArchiveList=" (ignore quotation marks).
+
+### Ensure Loose Files Don't Load
+
+Now we need to prevent the loose files from loading:
+
+1. Open StarfieldCustom.ini
+1. Remove these lines from the `[Archive]` section:
+```
+sResourceDataDirsFinal=
+bInvalidateOlderFiles=1
+```
+
+By doing this, we don't need to go and manually delete/disable our loose files from each mod that was packed here; they will simply not be loaded.
 
 ## Repacking Vanilla Archives
 
