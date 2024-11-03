@@ -19,6 +19,9 @@ See my current load order and mod list [on Load Order Library here](https://load
 1. Download `StarfieldPrefs.ini` and `StarfieldCustom.ini` and put in `Documents/My Games/Starfield` (and in `mo2/profiles/<profile>` for good measure)
 1. Download the `Ultra.ini` preset, and put in `Stock Game Folder` (this is tweaked to have settings more like Medium, but better meshes from Ultra)
 1. Replace the Nvidia DLSS plugin inside `Stock Game Folder` with the latest from [TechPowerup](https://www.techpowerup.com/download/nvidia-dlss-dll/)
+1. Install all mods, organize order, etc
+1. Pack loose files - see below
+1. Delete shader cache - see below
 
 ## Tools
 
@@ -151,6 +154,27 @@ where `path\to\ModOrganizer.exe` is the full path to the MO2 executable. For exa
 ```
 "G:\Mods\dev-modlists\a-better-starfield\ModOrganizer.exe" "moshortcut://:SFSE" %command%
 ```
+
+## Deleting The Shader Cache
+
+### Context
+
+Starfield runs on DirectX 12 which compiles shaders into a cache the first time you launch the game, and also as you play the game. After a shader is compiled, it remains in the cache allowing it to be fetched quicker and thus leading to less stutter as you play through the game.
+
+The shader cache becomes invalid when there is a driver update, which will force the game to recompile the shaders on launch and you will likely experience more stutter while playing for awhile after a driver update.
+
+Certain issues can arise from a stale shader cache as you mod your game and make other types of changes - things like flickering or reduced performance.
+
+### Solution
+
+[This guide from Reddit](https://www.reddit.com/r/Starfield/comments/16703yo/guide_how_to_force_recompile_shaders/) explains how to clean your shader cache on each kind of system. Since I use Nvidia, the steps are as follows:
+
+1. In Windows Explorer, enter this: `shell:LocalAppDataLow\NVIDIA\PerDriverVersion\DXCache`
+1. Delete all files from here; some may say they are in use, and you can restart your PC in safe mode and try again
+1. Then, navigate to `%LOCALAPPDATA%\Starfield\`
+1. Delete `Pipeline.cache`
+
+If you can't do those, updating your driver should also wipe the cache.
 
 ## Performance Benchmarking
 
