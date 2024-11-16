@@ -6,9 +6,6 @@ See my current load order and mod list [on Load Order Library here](https://load
 > [!IMPORTANT]
 > I have only used Mod Organizer 2 for Starfield modding and cannot provide much insight into Vortex setup or support; if you have more experience with it, feel free to open a PR and id be glad to include it
 
-> [!IMPORTANT]
-> I have not heavily tested this mod list or load order and it likely needs to be tweaked so please only use it as a reference.
-
 ## Setup
 
 1. Download [latest MO2](#mod-organizer-2) and configure a portable instance
@@ -20,7 +17,7 @@ See my current load order and mod list [on Load Order Library here](https://load
 1. Download the `Ultra.ini` preset, and put in `Stock Game Folder` (this is tweaked to have settings more like Medium, but better meshes from Ultra)
 1. Replace the Nvidia DLSS plugin inside `Stock Game Folder` with the latest from [TechPowerup](https://www.techpowerup.com/download/nvidia-dlss-dll/)
 1. Install all mods, organize order, etc
-1. Pack loose files - see below
+1. Pack loose files and disable loose file loading - see below
 1. Delete shader cache - see below
 
 ## Tools
