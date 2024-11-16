@@ -16,21 +16,20 @@ sfbgs021.esm
 sfbgs023.esm
 sfbgs01c.esm
 StarfieldCommunityPatch.esm
+Starfield HD.esm
 RRLN - Rabbit's Real Lights Neon.esm
 TNClassM.esm
 poi_variations_shuffle.esm
 sksfderek.esm
-ShopkeeperSchedules.esm
 MB_Scrappy.esm
 RRLAC - Rabbit's Real Lights Akila City.esm
-ProjectWarfare.esm
+RoyalAliens.esm
+stroudpremiumedition.esm
+projectwarfare.esm
 RRLHT - Rabbit's Real Lights HopeTown.esm
 RRLNA - Rabbit's Real Lights New Atlantis.esm
 RRLP - Rabbit's Real Lights Paradiso.esm
-GravityIsReal.esm
-MoreEnemies.esm
 NCCFunHouse.esm
-raijinheavyrevolver.esm
 DangerousEbbside.esm
 Eli_RenamedSnowglobes.esm
 Eli_RenamedEvidence.esm
@@ -39,26 +38,21 @@ RRLD - Rabbit's Real Lights Dazra.esm
 Better_Living_II.esm
 Better_Outpost_Radius.esm
 DWN_DecorativePack.esm
-Aurie_BuildOuptostsWithCredits.esm
 OutpostMissionBoards.esm
+Aurie_BuildOuptostsWithCredits.esm
 RRLNH - Rabbit's Real Lights New Homestead.esm
 RRLC - Rabbit's Real Lights Cydonia.esm
-AntiMaterielRifle.esm
+New Atlantis Subway.esm
 IW Warfighter.esm
 ArmaLite - AR-121.esm
 BSDM14.esm
-PXC_AmmoHud_Patch_BSD-M14.esm
 oldworldfirearms.esm
-Pistol_Laredo_M2.esm
 weap_starlight.esm
 CraftableWeaponSkins.esm
 CraftableWeaponSkins-TrackersAlliance.esm
 CraftableWeaponSkins-OldMarsSkinPack.esm
 CraftableWeaponSkins-ConstellationSkinPack.esm
 ProjectWarfareAddonPack1.esm
-ProjectWarfare_Norm_Patch.esm
-PXC_AmmoHud_Patch_PWHE.esm
-PXC_AmmoHud_Patch_PWHE-AP1.esm
 x2357primeweaponskinsprojectwarfare.esm
 RD_ArmaLite_AR-121_Fix.esm
 ZW_AIO_CombaTech_Dark.esm
@@ -83,7 +77,6 @@ Bedlam.esm
 BattensWrecks.esm
 vcspacemotel.esm
 du_takeover.esm
-RoyalAliens.esm
 RoyalWeathers.esm
 Earth POIs.esm
 SYNTH_Combat_Wicked_Metal.esm
@@ -106,7 +99,6 @@ SeizureOfShips.esm
 ShipBuilderCategories.esm
 ShipVendorFramework.esm
 Sit To Add Ship.esm
-alphahud.esm
 ConstellationPremiumEditionIntegrated.esm
 OldMarsDistributed.esm
 Shades_Glowy_Stuff.esm
@@ -126,7 +118,6 @@ ImprovedFollowerBehavior.esm
 SubtleFlashlight - Less Wide - BlueNoSpec.esm
 ZW_AIO_KoreKinetics_Quantum.esm
 x2357primeweaponskinsmelee.esm
-InstantScan-3scans.esm
 PlanetDB.esm
 VisibleCompanionAffinity.esm
 MoreSurveyMissions.esm
@@ -155,5 +146,31 @@ rbt_FitnessPerks.esm
 Red_Mile_Terror.esm
 Pathfinder_MEA_Redux.esm
 SaltysRegistrationFeeFix.esm
+NoMoreTinyOldEarthGuns.esm
+RoyalWeathersVaRuunkai2.esm
+InstantScan.esm
+rbt_RealO2.esm
+SmarterSpacesuitAutohide.esm
+SmarterSpacesuitAutohide_SFBGS001.esm
+ShatteredSpaceDelayed.esm
+TheTrackersAllianceDelayed.esm
+StarfieldsAnon.esm
+WorkbenchFilterFramework.esm
+LeaveNoWitnesses.esm
+creweatsfood.esm
+vivs_FurnishYourFleet.esm
+grav_79_z.esm
+Increased Trait Count.esm
+BetterBackgrounds.esm
+x2357primearmorskinsciviliansurvivalsuit.esm
 OVERRIDE_Starfield.esm
+UCMO_CE_Visors.esm
+Luxor's Andreja.esm
+ProjectWarfare_Norm_Patch.esm
+PXC_AmmoHud_Patch_BSD-M14.esm
+PXC_AmmoHud_Patch_PWHE.esm
+PXC_AmmoHud_Patch_PWHE-AP1.esm
+PXC_AmmoHud.esm
+PXC_AmmoHud_Patch_KZ_AOS.esm
+GravityIsReal.esm
 BlueprintShips-Starfield.esm
