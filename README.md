@@ -1,7 +1,7 @@
 # starfield-modding-guide
 Tips/guidance for modding Starfield; mostly a reference for myself. Make sure you check footnotes for additional info, and I welcome any suggestions or corrections as issues or PRs!
 
-See my current load order and mod list [on Load Order Library here](https://loadorderlibrary.com/lists/a-better-starfield-2#modlist.txt).
+See my current load order and mod list [on Load Order Library here](https://loadorderlibrary.com/lists/a-better-starfield-3#modlist.txt).
 
 > [!IMPORTANT]
 > I have only used Mod Organizer 2 for Starfield modding and cannot provide much insight into Vortex setup or support; if you have more experience with it, feel free to open a PR and id be glad to include it
